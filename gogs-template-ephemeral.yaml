@@ -38,7 +38,7 @@ objects:
     type: ClusterIP
   status:
     loadBalancer: {}
-- apiVersion: v1
+- apiVersion: apps.openshift.io/v1
   kind: DeploymentConfig
   metadata:
     annotations:
@@ -160,7 +160,7 @@ objects:
     to:
       name: ${APPLICATION_NAME}
 - kind: DeploymentConfig
-  apiVersion: v1
+  apiVersion: apps.openshift.io/v1
   metadata:
     labels:
       app: ${APPLICATION_NAME}
