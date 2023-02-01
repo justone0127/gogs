@@ -171,7 +171,7 @@ objects:
     to:
       name: ${APPLICATION_NAME}
 - kind: DeploymentConfig
-  apiVersion: v1
+  apiVersion: apps.openshift.io/v1
   metadata:
     labels:
       app: ${APPLICATION_NAME}
